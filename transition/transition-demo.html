@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 250px;
+            border: 1px solid #000;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .mask{
+            width: 500px;
+            height: 250px;
+            position: absolute;
+            top:0 ;
+            left:0;
+            opacity: 0;
+            text-align: center;
+            line-height: 250px;
+            font-size: 100px;
+            color: white;
+            transition: all .5s ;
+        }
+        img{
+            width: 600px;
+
+        }
+        .outer:hover .mask{
+            background-color: black;
+            opacity: 0.4;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="outer">
+    <img src="img/4.jpg" alt="">
+    <div class="mask">
+        Sea
+    </div>
+</div>
+
+
+</body>
+</html>
